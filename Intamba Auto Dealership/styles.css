@@ -1,0 +1,186 @@
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark background color for header */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-right: 20px; /* Space between company name and navigation */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Yellow hover color */
+}
+
+/* Search bar */
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #ffc107; /* Yellow background for buttons */
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #ffdb4d; /* Darker yellow on hover */
+}
+
+/* Main content styles */
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background color for main content */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow for main content */
+}
+
+.main h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+/* Product listings */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light grey background for products */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ffc107; /* Yellow background for buttons */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #ffdb4d; /* Darker yellow on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+
+/* General styles for links */
+a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
